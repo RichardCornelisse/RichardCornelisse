@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    animation-name: bgchange;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+*{
+    line-height: 1.4;
+    margin: 0;
+    color: #252526;
+    font-family: 'JetBrains mono';
+    text-align: center;
+    transition: background-color 0.5s ease-in-out;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 100;
+
+}
+
+.intro {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.higher{
+    position: relative;
+    top: -5vh;
+}
+
+.hide {
+    background: transparent;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+h1{
+    /*position: relative;*/
+    transition: color 0.5s ease-in-out;
+    font-size: 4vh ;
+    top: 40%;
+    width: 100%;
+}
+
+h2{
+    position: relative;
+    font-size: 2vh ;
+    top: 50%;
+    width: 100%;
+}
+
+.hide2 {
+    display: none;
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes bgchange {
+    0%  {
+        background-color: #0A0A0E;
+    }
+    100% {
+        background: white;
+    }
+}
